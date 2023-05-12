@@ -1,0 +1,138 @@
+.cuerpoBase {
+    /*background-color: #D66161;*/
+    overflow-x: hidden;    
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(45deg, #D66161, orange);
+}
+
+header{
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: white;
+    width: 97.5%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#avisoPrecios{
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+nav {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+}
+
+#cabeceraLogo{
+    display: inline;
+    position: relative;
+    right: 0%;
+    top: 15px
+}
+
+.headerList {
+    padding-right: 25px;
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    margin: 0, 0, 0, 20px; /*arriba, derecha, abajo, izquierda*/
+    /*position: relative; permite variar la posición relativa del menú nav con respecto a sí mismo
+    position: absolute; es para eliminar el elemento del flujo normal de documentos, posicionándose en el 
+    punto de incio del padre*/
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+nav a {
+    text-transform: uppercase; /*convierte el texto todo a mayúscula*/
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover{
+    font-weight: 500;
+}
+
+nav a:active{
+    background-color: #6FBB64;
+    color: white;
+}
+
+.comidas{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.comidas li{
+    display: inline-block;
+    height: 240px; 
+    width: 29%;
+    margin-left: 25px;
+    text-align: center;
+    vertical-align: top;
+    margin-bottom: 40px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    border-bottom: none;
+    border-top: none;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.comidas li:hover{
+    background-color: #6FBB64;
+    border: 2px solid white;
+    color: white;
+}
+
+.comidas h2{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+.descripcion-producto{
+    font-size: 13px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    margin-top: 5px;
+}
+
+.precio-producto{
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    margin-top: 15px;
+}
+
+.cuadroPie {
+    width: 100%;
+    height: 23%;
+    text-align: center;
+    background-image: url('materialGrafico/11382.jpg');
+    padding-bottom: 5px;
+}
+
+.textoCopyright {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 11px;
+    vertical-align: bottom;
+    margin-top: 20px;
+}

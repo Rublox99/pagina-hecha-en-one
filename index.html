@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!--Indica al navegador utiliza la versión html5-->
+<html lang="es">
+    <head> <!--Etiquetas informativos dentro de HEAD-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width">
+        <title>Gastronomía de Honduras</title>
+        <link rel="stylesheet" href="style_index.css">
+        <link rel="custom icon" href="materialGrafico/faviconLogo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Outfit:wght@200&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body> <!--Etiquetas de contenido dentro BODY-->
+        <!-- Define el encabezado o título principal -->    
+        <header class="cabecera">
+            <h1>
+                <section class="cabeceraLogo">
+                    <img src="materialGrafico/logoPagina.png" style="width: 10%; height: 10%; align-items: left;">
+                </section>
+            </h1>
+            <nav>
+                <ul>
+                    <li class="headerList"><a href="index.html">Inicio</a></li>
+                    <li class="headerList"><a href="paginaComidas.html">Comidas</a></li>
+                    <li class="headerList"><a href="paginaContactos.html">Contáctame</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="divIntroduccion">
+                <h2 style="text-align: center;">Sobre la gastronomía hondureña</h2>
+                <p>La comida hondureña es una <em>fusión de influencias prehispánicas, africanas y españolas,</em> que utiliza 
+                ingredientes principales que incluyen <strong>arroz, frijoles, plátanos, maíz, yuca, carne de res, cerdo, pollo y 
+                mariscos.</strong> Algunos platos destacados son las <strong>baleadas</strong>, los tamales, el sopa de caracol y el plato típico, 
+                que incluye carne asada, arroz y frijoles.</p> 
+            </section>
+    
+            <section class="divMision">
+                <p><em>La misión de nuestra gastronomía es:</em> <strong>"Promover la diversidad y la riqueza de la comida hondureña 
+                a nivel nacional e internacional, a través de la educación y la difusión de sus sabores y tradiciones."</strong></p>
+            </section>
+    
+            <section class="divObjetivos">
+                <p><strong><em>Además, queremos lograr distintos objetivos:</em></strong></p>
+                <p>- Mayor conocimiento y valoración de la comida hondureña como patrimonio cultural y gastronómico del país.</p>
+                <p>- Mayor presencia y promoción de la diversidad y riqueza de la comida hondureña en los medios de comunicación y 
+                redes sociales.</p>
+                <p>- Incremento en la producción y consumo de productos locales y tradicionales en la industria alimentaria y 
+                turística del país.</p>
+            </section>
+
+            <!--
+                - <ul> con <li> internos, implica una lista (ul) y sus elementos (li)
+                - con ayuda de inline-block para el bloque ul en css, se evita que estos bloques den un salto de línea y por
+                ende use solo lo de su contenido, por lo que lo siguiente que se agregue, sea al lado
+            -->
+        
+            <section class="divisor">        
+                <h3 style="text-align: center;">Insight de la comida hondureña</h3> 
+                <ul>
+                    <li class="insight">Utiliza ingredientes locales tradicionales, además de emplear variedad de hierbas y <br>especias como cilantro, achiote
+                    y demás.</li>
+                    <li class="insight">Se prepara de diversas formas, ya sea asada, frita, cocida o a la parrilla.</li>
+                    <li class="insight">Es muy sabrosa y variada, ya que trata sabores picantes aparte de utilizar ingredientes<br> dulces y ácidos.</li>
+                    <li class="insight">Se puede presentar de diversas formas, ya sea plato individual, bandeja compartida <br>u hojas de plátano.</li>
+                </ul>
+
+                <img src="materialGrafico/comidasHonduras.PNG" id="imagenDivisor">
+
+            </section>
+
+            <!--IMPLEMENTA UN MAPA DE GOOGLE EN EL APARTADO DE HTML-->
+            <section class="mapaGoogle">
+                <h3 class="tituloMapa">Nuestra ubicación</h3>
+                <legend class="descripcionMapa">Nuestro establecimiento está ubicado en el corazón del Distrito Central</legend>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30958.992965630474!2d-87.1795928478241!3d14.084607309047858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6fa334924716c7%3A0xc9884caba07ec548!2sUniversidad%20Nacional%20Aut%C3%B3noma%20de%20Honduras!5e0!3m2!1ses!2shn!4v1683678921124!5m2!1ses!2shn" 
+                width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+            <section class="videoYoutube">
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/GerDLe65gMg?start=66" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+            </section>
+
+        </main>
+
+        <footer>
+            <section class="cuadroPie">
+                <section class="contenidoPie">
+                    <img src="materialGrafico/logoPagina.png" style="height: 10%; width: 10%;">
+                    <div class="textoCopyright">© Copyright Ruben Almendares ONE - G5 2023</div>
+                </section>
+            </section>
+        </footer>
+    </body>
+
+</html>

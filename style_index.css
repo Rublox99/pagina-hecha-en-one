@@ -1,0 +1,270 @@
+/*Hojas de estilo en cascada*/
+
+/*
+- para referenciar una etiqueta de html, es solo <nombreEtiqueta>{}
+- para referenciar un div, es #<nombreDiv> {}
+- para referenciar una clase, es .<nombreClase> {}
+*/
+
+body {
+    text-align: center;
+    margin-left: 5px;
+    width: 100%;
+    height: 150vh;
+    display: grid; /*se requiere place-items y display para reubicar los objetos*/
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    background-image:url(materialGrafico/fondoRoatan.png);
+    overflow-x: hidden;
+}
+
+.cabecera{
+    width: 97%;
+    margin: 0 auto;
+    height: 60%;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid black;
+    background-color: #D66161;
+    padding-bottom: 10px;
+}
+
+.cabeceraLogo{
+    display: inline;
+    position: relative;
+    right: 30%;
+}
+
+#cabeceraTexto{
+    position: relative;
+    bottom: 130px;
+}
+
+.headerList {
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+main {
+    width: 98%;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+}
+
+nav {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;    
+    width: 30%;
+    height: 22%;
+    padding-bottom: 15px;
+    position: relative;
+    bottom: 100px;
+    margin: 0 auto;
+}
+
+nav a {    
+    display: inline-block;
+    text-transform: uppercase; /*convierte el texto todo a mayúscula*/
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav li {
+    display: inline;
+    margin: 0, 0, 0, 20px; /*arriba, derecha, abajo, izquierda*/
+    /*position: relative; permite variar la posición relativa del menú nav con respecto a sí mismo
+    position: absolute; es para eliminar el elemento del flujo normal de documentos, posicionándose en el 
+    punto de incio del padre*/
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+nav a:hover{
+    font-weight: 500;
+}
+
+nav a:active{
+    background-color: #6FBB64;
+    color: white;
+}
+
+#bannerPagina {
+    padding-top: 20px;
+    width: 98%;
+}
+
+.divObjetivos {
+    width: 80%;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    height: 10%;
+    color:white;
+    border: 2px solid white;
+    border-radius: 20px; /*redondea los bordes del rectángulo definido con width y height*/ 
+    padding: 20px 10px 20px 10px; /*define los espaciados internos; padding: sería para los cuatro a la vez*/
+    margin-bottom: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.insight {
+    align-items: left; 
+    text-align: left;
+    font-style: italic;
+    backdrop-filter: blur(5px);
+}
+
+.divisor {
+    width: 80%;
+    display: inline-block;
+    text-align: justify;
+    align-items: left;
+    font-style: italic;
+    color:white;
+    background-color: rgb(64, 145, 108);
+    border-radius: 20px
+}
+
+/*
+- Se le indica no de salto de línea luego de los bloques de lista, block para general
+- Por lo general, la línea inferior de la lista se alinea al fondo, al par de la imagen
+por lo que se usa vertical-align: center para reubicarlo
+*/
+ul {
+    display: inline-block;
+    vertical-align: center;
+    margin-right: 35px;
+}
+
+#imagenDivisor {
+    width: 46%;
+    height: 25%;
+    border-radius: 10px;
+    display: inline;
+    position: relative;
+    left: 28%;
+}
+
+.divIntroduccion { 
+    width: 70%;
+    display: inline-block;
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 16px;
+    color: white; 
+    border-radius: 20px;
+    border: 2px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.divMision {
+    width: 70%;
+    display: inline-block;
+    text-align: justify;
+    font-size: 16px;
+    color:white;
+    background-color: #D66161;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mapaGoogle {
+    color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    backdrop-filter: blur(2px);
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.tituloMapa {
+    color: white;
+}
+
+.descripcionMapa {
+    margin-bottom: 10px;
+}
+
+iframe {
+    box-shadow: 5px 5px 5px gray;
+}
+
+.videoYoutube{
+    padding: 10px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    backdrop-filter: blur(2px);
+}
+
+.cuadroPie {
+    width: 100%;
+    height: 100;
+    text-align: center;
+    vertical-align: bottom;
+    margin-top: 10px;
+    position: relative;
+    background-image: url('materialGrafico/11382.jpg');
+    padding-bottom: 5px;
+}
+
+.textoCopyright {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 480px){
+    .cabecera{
+        width: 97%;
+        position: relative;
+    }
+
+    nav {
+        height: 55%;
+        margin-top: 40px;
+    }
+
+    nav a{  
+        position: relative;
+        right: 20px;
+    }
+
+    .divObjetivos{
+       height: 13%;
+       width: 75%;
+       position: relative;
+    }
+
+    .divIntroduccion{
+        position: relative;
+        width: 80%;
+    }
+
+    .divMision{
+        position: relative;
+        width: 80%;
+    }
+
+    .cabeceraLogo{
+        top: 30px;
+    }
+
+    iframe{
+        width: 400px;
+    }
+
+}

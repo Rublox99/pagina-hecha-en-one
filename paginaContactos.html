@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contáctame</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style_contactos.css">
+    <link rel="custom icon" href="materialGrafico/faviconLogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Outfit:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body class="cuerpoEstilo">
+    <!--Cabecera del cuerpo-->
+    <header style="margin-bottom: -20px;">
+        <div class="cabecera">
+            <div id="cabeceraLogo">
+                <!--ALT ES UN TEXTO ALTERNATIVO PARA COMPRENDER DE QUÉ VA LA IMAGEN-->
+                <img src="materialGrafico/logoPagina.png" alt="Logo de la página" style="width: 10%; height: 10%; align-items: left; padding-bottom: 20px;">
+            </div>
+            <nav>
+                <ul>
+                    <li class="headerList"><a href="index.html">Inicio</a></li>
+                    <li class="headerList"><a href="paginaComidas.html">Comidas</a></li>
+                    <li class="headerList"><a href="paginaContactos.html">Contáctame</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <form>
+            <label for="inputNombre" class="etiquetaContacto">Nombre</label>
+            <input type="text" id="inputNombre" placeholder="Primer nombre" class="inputPrimerizo" required>
+            
+            <label for="inputApellido" class="etiquetaContacto">Apellido</label>
+            <input type="text" id="inputApellido" placeholder="Primer apellido" class="inputPrimerizo" required>
+            
+            <label for="inputTelefono" class="etiquetaContacto">Teléfono</label>
+            <input type="tel" id="inputTelefono" placeholder="9510-1112" class="inputPrimerizo" required>
+
+            <label for="inputCorreo" class="etiquetaContacto">Correo electrónico</label>
+            <input type="email" id="inputCorreo" placeholder="nombre@dominio.com" class="inputPrimerizo" required>
+            
+            <label for="inputComentario" class="etiquetaContacto">Mensaje</label>
+            <textarea id="inputComentario" cols="30" rows="10" placeholder="Coloque aquí su idea, mensaje o comentario"  class="inputPrimerizo" required></textarea>
+
+            <!--FIELDSET ASIGNA ITEMS A UN GRUPO FIELDSET-->
+            <fieldset>
+                <!--LEGEND ES PARA TEXTOS-->
+                <legend style="font-size: 18px;" class="etiquetaContacto">¿Cómo preferiría ser contactado?</legend>
+                <label for="radioEmail" class="radio-opcion">
+                    <input type="radio" name="radio-opcion" value="Correo electrónico" checked>Email
+                </label>
+                <label for="radioLlamada" class="radio-opcion">
+                    <input type="radio" name="radio-opcion" value="Llamada telefónica">Llamada telefónica
+                </label>
+                
+                <label for="radioWhatsapp" class="radio-opcion">
+                    <input type="radio" name="radio-opcion" value="Whatsapp">Whatsapp
+                </label>
+                
+            </fieldset>
+
+            <fieldset>
+                <label class="checkbox-suscripcion">
+                    <legend class="etiquetaContacto">¿Le gustaría recibir novedades sobre la comida hondureña? Indique si lo desea<input type="checkbox" checked style="font-size: 18px;"></legend>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Enviar comentario" class="inputSubmit">
+        </form>
+    </main>
+    
+    <footer>
+        <div class="cuadroPie">
+            <div class="contenidoPie">
+                <img src="materialGrafico/logoPagina.png" alt="Logo de la página" style="height: 10%; width: 10%;">
+                <div class="textoCopyright">© Copyright Ruben Almendares ONE - G5 2023</div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
